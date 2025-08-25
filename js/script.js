@@ -190,5 +190,4 @@ let change = function(){
     newText.style.color = "green"
     newText.style.fontSize = "50px"
     document.body.appendChild(newText)
-
 }
