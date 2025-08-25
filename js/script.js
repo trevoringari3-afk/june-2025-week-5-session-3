@@ -129,3 +129,66 @@ let variableName = () => {
 let answer = () => console.log("...how do you do my friend...????")
 
 answer();
+
+// parameters (input) and return (output)
+/*
+
+function functionName(parameters, parameters, parameters){
+    parameters
+    return value;
+}
+
+*/
+
+
+let divide = (numberOne, numberTwo) => { return numberOne/numberTwo; }
+
+console.log(divide(50, 33));
+
+// Function to calculate area of a triangle
+function triangleArea(base, height) {
+  return 0.5 * base * height;
+}
+
+//Scope
+//1. Global - anywhere
+//2. Local - constrained to a block/function
+
+const PI = 3.14152; //global variable
+
+function circumference(radius){
+    return 2 * PI * radius;
+}
+
+function test(){
+    let message = "I am a local variable"
+    console.log(message);
+}
+
+console.log(PI);
+
+// DOM - Document Object Model
+// getElementById() - id attribute.
+
+let change = function(){
+    //select the elements
+    let intro = document.getElementById('intro')
+    let body = document.getElementById('body')
+    let paragraph = document.getElementById('paragraph')
+
+    //manipulate - change
+    body.style.backgroundColor = "lightgrey"
+    body.style.margin = "50px"
+    intro.textContent = "Introduction to Javascript Concepts"
+    intro.style.textDecoration = "underline"
+    paragraph.textContent = "Javascript is fun to use!"
+    paragraph.style.color = "red"
+
+    //add
+    let newText = document.createElement("h3")
+    newText.textContent = "This marks the end of our session on Introduction to JS!"
+    newText.style.color = "green"
+    newText.style.fontSize = "50px"
+    document.body.appendChild(newText)
+
+}
